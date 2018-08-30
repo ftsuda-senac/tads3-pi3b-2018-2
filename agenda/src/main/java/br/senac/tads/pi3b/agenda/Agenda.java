@@ -79,8 +79,8 @@ public class Agenda {
         agenda.executar();
         
         int i = 0;
-        while (i < 100) {
-            if (i % 3 == 0) {
+        while (i < 10) {
+            if (i % 4 == 0) {
                 System.out.println("Numero " + i);
             }
             i++;
