@@ -79,7 +79,7 @@ public class Agenda {
         agenda.executar();
         
         for (int i = 0; i < 100; i++) {
-            if (i % 2 == 0) {
+            if (i % 3 == 0) {
                 System.out.println("Numero " + i);
             }
         }
