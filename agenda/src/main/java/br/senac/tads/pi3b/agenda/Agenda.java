@@ -77,9 +77,11 @@ public class Agenda {
     public static void main(String[] args) {
         Agenda agenda = new Agenda();
         agenda.executar();
-        
-        for (int i = 0; i < 100; i++) {
+
+        int i = 0;
+        while (i < 100) {
             System.out.println("Numero " + i);
+            i++;
         }
     }
 }
