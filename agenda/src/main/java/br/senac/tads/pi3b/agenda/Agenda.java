@@ -77,11 +77,13 @@ public class Agenda {
     public static void main(String[] args) {
         Agenda agenda = new Agenda();
         agenda.executar();
-        
+
         int i = 0;
         while (i < 100) {
-            if (i % 3 == 0) {
-                System.out.println("Numero " + i);
+            for (int j = 0; j < 10; j++) {
+                if ((i * j) % 3 == 0) {
+                    System.out.println("Numero " + i);
+                }
             }
             i++;
         }
