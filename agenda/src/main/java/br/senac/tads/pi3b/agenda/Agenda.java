@@ -79,7 +79,9 @@ public class Agenda {
         agenda.executar();
         
         for (int i = 0; i < 100; i++) {
-            System.out.println("Numero " + i);
+            if (i % 2 == 0) {
+                System.out.println("Numero " + i);
+            }
         }
     }
 }
