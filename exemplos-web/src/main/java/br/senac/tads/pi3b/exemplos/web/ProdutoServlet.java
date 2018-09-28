@@ -51,7 +51,8 @@ public class ProdutoServlet extends HttpServlet {
         request.setAttribute("nome", nome);
         request.setAttribute("idade", idade);
         
-        RequestDispatcher dispatcher = request.getRequestDispatcher("produto2.jsp");
+        RequestDispatcher dispatcher = 
+                request.getRequestDispatcher("produto2.jsp");
         dispatcher.forward(request, response);
     }
 
