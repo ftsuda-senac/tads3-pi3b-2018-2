@@ -5,6 +5,7 @@
  */
 package br.senac.tads.pi3b.exemplos.web;
 
+import br.senac.tads.pi3b.exemplos.web.entidade.Produto;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
