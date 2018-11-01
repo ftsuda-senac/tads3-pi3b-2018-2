@@ -12,5 +12,14 @@
             <h2>Bem vindo <c:out value="${sessionScope.usuario.nomeCompleto}" /></h2>
             <p><c:out value="${sessionScope.usuario.hashSenha}" /></p>
         </c:if>
+        <div>
+            <a href="${pageContext.request.contextPath}/protegido/peao">Entrar em /protegido/peao</a>
+        </div>
+        <div>
+            <a href="${pageContext.request.contextPath}/protegido/fodon">Entrar em /protegido/fodon</a>
+        </div>
+        <div>
+            <a href="${pageContext.request.contextPath}/protegido/god">Entrar em /protegido/god</a>
+        </div>
     </body>
 </html>
