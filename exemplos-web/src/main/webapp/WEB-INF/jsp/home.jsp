@@ -8,18 +8,21 @@
     </head>
     <body>
         <h1>Home</h1>
-        <c:if test="${sessionScope.usuario != null}">
-            <h2>Bem vindo <c:out value="${sessionScope.usuario.nomeCompleto}" /></h2>
-            <p><c:out value="${sessionScope.usuario.hashSenha}" /></p>
+        <c:import url="cabecalho.jsp" />
+        <c:if test="${sessionScope.usuario.verificarPapel('PEAO')}">
+            <div>
+                <a href="${pageContext.request.contextPath}/protegido/peao">Entrar em /protegido/peao</a>
+            </div>
         </c:if>
-        <div>
-            <a href="${pageContext.request.contextPath}/protegido/peao">Entrar em /protegido/peao</a>
-        </div>
-        <div>
-            <a href="${pageContext.request.contextPath}/protegido/fodon">Entrar em /protegido/fodon</a>
-        </div>
-        <div>
-            <a href="${pageContext.request.contextPath}/protegido/god">Entrar em /protegido/god</a>
-        </div>
+        <c:if test="${sessionScope.usuario.verificarPapel('FODON')}">
+            <div>
+                <a href="${pageContext.request.contextPath}/protegido/fodon">Entrar em /protegido/fodon</a>
+            </div>
+        </c:if>
+        <c:if test="${sessionScope.usuario.verificarPapel('GOD')}">
+            <div>
+                <a href="${pageContext.request.contextPath}/protegido/god">Entrar em /protegido/god</a>
+            </div>
+        </c:if>
     </body>
 </html>

@@ -8,6 +8,7 @@
     </head>
     <body>
         <h1><c:out value="${titulo}" /></h1>
+        <c:import url="cabecalho.jsp" />
         <h2><c:out value="${msg}" /></h2>
     </body>
 </html>
